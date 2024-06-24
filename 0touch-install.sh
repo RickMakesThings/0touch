@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Install necessary software
-sudo dnf install picom sxhkd bspwm lightdm lightdm-gtk xdotool rofi dunst timeshift alacritty pavucontrol florence nm-connection-editor nemo nemo-fileroller nemo-compare nemo-image-converter kde-connect xorg-x11-server-Xorg gnome-calendar gnome-clocks gnome-calculator gnome-system-monitor flameshot baobab gpaste &
+sudo dnf install picom sxhkd bspwm lightdm lightdm-gtk xdotool rofi dunst timeshift alacritty pavucontrol florence nm-connection-editor nemo nemo-fileroller nemo-compare nemo-image-converter kde-connect xorg-x11-server-Xorg gnome-calendar gnome-clocks gnome-calculator gnome-system-monitor flameshot baobab gpaste
 
 # Create directories
-mkdir Documents Downloads Images Video ~/.config/bspwm ~/.config/sxhkd
+mkdir ~/Documents ~/Downloads ~/Images ~/Video ~/.config/bspwm ~/.config/sxhkd
 
 # Enable LightDM
 sudo systemctl enable lightdm.service
