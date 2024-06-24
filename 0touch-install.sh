@@ -13,6 +13,8 @@ sudo systemctl set-default graphical.target
 # Copy bspwm and sxhkd files
 cp ~/.config/0touch/configs/bspwm/bspwmrc ~/.config/bspwm/
 cp ~/.config/0touch/configs/sxhkd/sxhkdrc ~/.config/sxhkd/
+# Make bspwmrc executable
+chmod +x ~/.config/bspwm/bspwmrc
 
 # Notify user that script is done
 echo "Installation finished, please reboot to continue"
