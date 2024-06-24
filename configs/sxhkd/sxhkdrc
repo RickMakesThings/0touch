@@ -3,8 +3,8 @@
 #
 
 # terminal emulator
-super + Return
-	urxvt
+super + t
+	alacritty
 
 # program launcher
 super + @space
