@@ -1,5 +1,13 @@
 #!/usr/bin/sh
 
+# Set custom VM resolution
+xrandr --newmode "1800x1200_60.00"  180.75  1800 1920 2112 2424  1200 1203 1213 1245 -hsync +vsync
+xrandr --addmode Virtual-1 1800x1200_60.00
+xrandr -s 1800x1200
+
+# Start-up programs/scripts
+~/.config/0touch/configs/eww/eww/target/release/eww daemon
+~/.config/0touch/configs/eww/eww/target/release/eww open bar
 sxhkd &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
